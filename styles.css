@@ -59,7 +59,7 @@ a {
 }
 
 .github-icon {
-  background-image: url('/images/github.svg');
+  background-image: url('/assets/icons/github.svg');
   background-repeat:  no-repeat;
   background-position: center;
   background-size: contain;
@@ -146,11 +146,11 @@ section h2 {
   display: block;
 }
 .card-github {
-    background-image: url('/images/github.svg');
+    background-image: url('/assets/icons/github.svg');
 }
 
 .card-deploy {
-  background-image: url('/images/external-link.svg');
+  background-image: url('/assets/icons/external-link.svg');
 }
 .about-description {
   margin-top: 15px;
@@ -188,7 +188,7 @@ footer div {
 }
 
 .contact-github {
-  background-image: url('/images/github.svg');
+  background-image: url('/assets/icons/github.svg');
   background-repeat:  no-repeat;
   background-position: center;
   background-size: contain;
