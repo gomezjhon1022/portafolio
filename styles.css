@@ -6,10 +6,10 @@
   --gray:#ccd6f6;
   --dark-gray:#8892b0;
   --white: #ffffff;
-  --black: #000000; 
-  --sm: 1rem;
-  --md: 1.5rem;
-  --lg: 2rem;
+  --black: #000000;
+  --sm: 1.5rem;
+  --md: 2rem;
+  --lg: 2.5rem;
 
 }
 *{
@@ -30,7 +30,8 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  height: 40px;
+  height: 70px;
+
 }
 nav {
   display: flex;
@@ -43,15 +44,20 @@ nav li {
   display: inline-block;
   margin-left: 15px;
   font-size: var(--md);
-  color: var(--green);
-  cursor: pointer;
+  
 }
-nav li:hover {
+
+nav li a {
+  color: var(--green);
+}
+nav li a:hover {
     color: var(--dark-gray);
 }
+
 a {
   text-decoration: none;
 }
+
 .header-right {
   display: flex;
   align-items: center;
@@ -63,8 +69,8 @@ a {
   background-repeat:  no-repeat;
   background-position: center;
   background-size: contain;
-  width: 25px;
-  height: 25px;
+  width: 35px;
+  height: 35px;
   display: block;
 }
 
@@ -75,6 +81,7 @@ a {
 
 .subtitle {
   color: #64ffda;
+  font-size: var(--md);
 }
 .home h1{
   font-size: var(--lg);
@@ -91,23 +98,21 @@ margin-top: 20px;
 }
 section h2 {
   margin: 40px 0px;
+  font-size: var(--lg);
 }
 
 .projects-container {
-  display: grid;
-  grid-template-columns: 250px 250px 250px;
-  grid-template-rows: 330px 330px;
-  justify-content: center;
-  align-items: center;
-  gap: 60px;
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 40px;
 }
 
 .card {
   border-radius: 15px;
   background-color:var(--light-blue);
-  height: 330px;
-  width: 250px;
+  height: 350px;
+  width: 270px;
   display:flex;
   flex-direction: column;
   align-items: center;
@@ -116,6 +121,7 @@ section h2 {
 
 .card-title {
   margin: 10px 0px;
+  font-size: var(--md);
 }
 
 .card-image {
@@ -124,7 +130,9 @@ section h2 {
   object-fit: contain;
 }
 .card-description {
-  margin-top: 10px;
+  margin: 10px 0px;
+  padding: 0 10px;
+  /* font-size: var(--sm); */
 }
 
 .card-technologies {
@@ -133,17 +141,17 @@ section h2 {
   justify-content: space-evenly;
   align-items: center;
   position:absolute;
-  bottom: 20px;
+  bottom: 15px;
 }
-/* .card-technologies span {
- 
-} */
+.card-technologies span {
+  color: var(--white);
+}
 .card-github,.card-deploy {
   background-repeat:  no-repeat;
   background-position: center;
   background-size: contain;
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   display: block;
 }
 .card-github {
@@ -164,6 +172,7 @@ section h2 {
 }
 .about-container p {
   text-align: justify;
+  font-size: var(--sm);
 }
 
 .about-image {
@@ -180,12 +189,14 @@ section h2 {
 
 footer h2 {
   margin: 100px 0px 30px 0px;
+  font-size: var(--lg);
 }
 
-footer div {
+.footer-info {
   display: flex;
   margin: 40px 70px;
   justify-content: space-evenly;
+  font-size: var(--sm);
 }
 
 .contact-github {
@@ -193,8 +204,8 @@ footer div {
   background-repeat:  no-repeat;
   background-position: center;
   background-size: contain;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   display: block;
 }
 footer h3 {
@@ -202,6 +213,38 @@ footer h3 {
 }
 .icon-information {
   font-size: 0.8rem;
+}
+
+@media (max-width:920px) {
+  .home {
+    padding-right: 30%;
+  }
+}
+
+@media (max-width:500px) {
+  .home {
+    padding: 0 10%;
+  }
+  .footer-info {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-info a {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width:750px) {
+  .about-container {
+    flex-direction: column-reverse;
+    width: 100%;
+    padding: 0 10%;
+  }
+  .about-image {
+    margin: 0;
+  }
+
+
 }
 
 
