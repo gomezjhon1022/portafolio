@@ -69,6 +69,18 @@ a {
   background-repeat:  no-repeat;
   background-position: center;
   background-size: contain;
+  margin: 0px 20px;
+  width: 35px;
+  height: 35px;
+  display: block;
+}
+
+.linkedin-icon {
+  background-image: url('assets/icons/linkedin.svg');
+  background-repeat:  no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin: 0px 20px;
   width: 35px;
   height: 35px;
   display: block;
