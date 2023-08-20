@@ -44,7 +44,6 @@ nav li {
   display: inline-block;
   margin-left: 15px;
   font-size: var(--md);
-  
 }
 
 nav li a {
@@ -94,6 +93,10 @@ a {
 .subtitle {
   color: #64ffda;
   font-size: var(--md);
+}
+
+.description {
+  text-align: justify;
 }
 .home h1{
   font-size: var(--lg);
