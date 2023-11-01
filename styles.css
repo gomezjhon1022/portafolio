@@ -201,26 +201,49 @@ section h2 {
 .card-deploy {
   background-image: url('assets/icons/external-link.svg');
 }
-.about-description {
-  margin-top: 15px;
-}
-
 .about-container {
   display: flex;
-  width: 90%;
+  width: 100%;
   padding: 0px 80px;
 }
+.about-description {
+  margin-top: 15px;
+  width: 70%;
+}
+.about-image {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .about-container p {
   text-align: justify;
   font-size: var(--sm);
 }
 
-.about-image {
+.image-container {
+  position:relative;
+}
+.second-image {
   width: 200px;
-  padding: 10px ;
   margin-left: 30px;
   border-radius: 50%;
   object-fit: fill;
+  z-index: 1;
+}
+.layer-image {
+  position:absolute;
+  background-color: var(--secondary);
+  width: 200px;
+  height: 100%;
+  z-index: 2;
+  top:0;
+  left: 0;
+  margin-left: 30px;
+  opacity: 0.3;
+  border-radius: 50%;
+  padding: 10px;
 }
 .about-technologies {
   color:var(--secondary);
