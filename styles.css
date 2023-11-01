@@ -173,7 +173,6 @@ section h2 {
 .card-description {
   margin: 10px 0px;
   padding: 0 10px;
-  /* font-size: var(--sm); */
 }
 
 .card-technologies {
@@ -262,19 +261,6 @@ footer h3 {
   }
 }
 
-@media (max-width:500px) {
-  .home {
-    padding: 0 10%;
-  }
-  .footer-info {
-    flex-direction: column;
-    align-items: center;
-  }
-  .footer-info a {
-    margin-bottom: 15px;
-  }
-}
-
 @media (max-width:750px) {
   .about-container {
     flex-direction: column-reverse;
@@ -284,8 +270,42 @@ footer h3 {
   .about-image {
     margin: 0;
   }
+}
 
+@media (max-width:500px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 20px;
+  }
+  nav {
+    width: 100%;
+  }
+  nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
 
+  nav li {
+    font-size: var(--sm);
+    margin-right: 0px;
+  }
+  .home {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  .footer-info {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-info a {
+    margin-bottom: 15px;
+  }
+  .description {
+    font-size: 1.2rem;
+  }
 }
 
 
