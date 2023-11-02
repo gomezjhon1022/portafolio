@@ -300,11 +300,29 @@ footer h3 {
   }
   .home {
     flex-direction: column;
+    align-items: center;
     padding: 0 20px;
+  }
+  .home__left {
+    width: 100%;
   }
   .home h1{
     font-size: var(--md);
   }
+  .about-container {
+    flex-direction: column;
+    width: 100%;
+    padding: 0 20px;
+  }
+  .about-description {
+    width: 100%;
+  }
+  .about-image {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+
   .footer-info {
     flex-direction: column;
     align-items: center;
