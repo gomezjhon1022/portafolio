@@ -137,6 +137,9 @@ a {
   color: var(--gray);
   text-align: center;
 }
+.project-list {
+  padding: 0 3vw;
+}
 section h2 {
   margin: 40px 0px;
   font-size: var(--lg);
@@ -204,7 +207,7 @@ section h2 {
 .about-container {
   display: flex;
   width: 100%;
-  padding: 0px 80px;
+  padding: 0 3vw;
 }
 .about-description {
   margin-top: 15px;
@@ -284,6 +287,7 @@ footer h3 {
     align-items: center;
     justify-content: space-around;
     padding: 0 20px;
+    height: 150px;
   }
   nav {
     width: 100%;
@@ -295,7 +299,7 @@ footer h3 {
   }
 
   nav li {
-    font-size: var(--sm);
+    font-size: var(--lg);
     margin-right: 0px;
   }
   .home {
@@ -336,8 +340,11 @@ footer h3 {
   }
 }
 
-
-
+@media (max-width:600px) {
+nav li {
+  font-size: var(--sm);
+}
+}
 
 
 
