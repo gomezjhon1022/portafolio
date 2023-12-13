@@ -31,12 +31,15 @@ body {
   background-color: var(--background-primary);
 }
 
+.contain {
+  max-width: 1300px;
+  margin: 0 auto;
+}
 header {
   display: flex;
   justify-content: space-between;
   height: 100px;
   padding: 0 3vw;
-
 }
 nav {
   display: flex;
@@ -78,6 +81,13 @@ a {
   display: block;
 }
 
+.github-icon:hover path,
+.card-github:hover path, 
+.card-deploy:hover path,
+.contact-github:hover path {
+  fill: var(--dark-gray);
+}
+
 .linkedin-icon {
   background-image: url('assets/icons/linkedin.svg');
   background-repeat:  no-repeat;
@@ -87,6 +97,12 @@ a {
   width: 35px;
   height: 35px;
   display: block;
+}
+
+.linkedin-icon:hover #linkedin-icon-polygon,
+.linkedin-icon:hover #linkedin-icon-path1,
+.linkedin-icon:hover #linkedin-icon-path2 {
+  fill: var(--dark-gray);
 }
 
 .home {
@@ -118,6 +134,9 @@ a {
   flex-direction: column;
   justify-content: center;
 }
+.home__left .about-technologies {
+  font-size: var(--md);
+}
 
 
 .subtitle {
@@ -130,7 +149,7 @@ a {
   padding-right: 4vw;
   font-size: 0.8rem;
   font-size: var(--sm);
-  margin-top: 20px;
+  margin: 20px 0;
   line-height: 1.5;
 }
 .home h1{
